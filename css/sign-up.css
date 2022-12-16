@@ -1,0 +1,52 @@
+.sign-up {
+  transform: translateY(-7%);
+}
+@media screen and (max-width: 1199px) {
+  .sign-up {
+    padding: 0.1em 1.5em;
+  }
+}
+.sign-up .form-control {
+  min-height: 3.8rem;
+  border-radius: 0.5rem;
+  background-color: var(--clr-neutral-200);
+}
+.sign-up .form-label, .sign-up .form-check-label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.sign-up .form-check-input:checked {
+  background-color: var(--clr-neutral-300);
+  border-color: #ced4da;
+}
+
+.img-partners__sign-up {
+  transform: translateY(-15%);
+}
+@media screen and (max-width: 768px) {
+  .img-partners__sign-up {
+    transform: translateY(-5%);
+  }
+}
+
+.account-details {
+  margin-bottom: 10em;
+}
+.account-details .acc-content {
+  width: 100%;
+  max-width: 20em;
+}
+.account-details .acc-content p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: left;
+}
+.account-details .acc-content p:first-child {
+  width: 8em;
+}
+.account-details h5 {
+  line-height: 1;
+}
+
+/*# sourceMappingURL=sign-up.css.map */
