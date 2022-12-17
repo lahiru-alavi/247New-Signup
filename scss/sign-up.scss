@@ -52,5 +52,22 @@
 h5 {
     line-height: 1;
 }
+}
 
+.pay-plan-wrap {
+    .card {
+        position: relative;
+        overflow: hidden;
+        isolation: isolate;
+        border-radius: 8px;
+        
+    }
+    .offer-pin {
+        position: absolute;
+        inset: 0 0 auto 0;
+        width: 100%;
+        background: rgb(255,229,2);
+background: linear-gradient(90deg, rgba(255,229,2,1) 0%, rgba(255,201,15,1) 100%);
+        
+    }
 }

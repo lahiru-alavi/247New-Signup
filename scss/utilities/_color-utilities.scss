@@ -35,3 +35,9 @@
     opacity: var(--op-#{$opWeight}) !important;
   }
 }
+
+@each $bdWidth, $bdWidthVal in $border-widths {
+  .border-#{$bdWidth} {
+    border-width: var(--bd-#{$bdWidth}) !important;
+  }
+}

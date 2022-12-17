@@ -49,4 +49,18 @@
   line-height: 1;
 }
 
+.pay-plan-wrap .card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: 8px;
+}
+.pay-plan-wrap .offer-pin {
+  position: absolute;
+  inset: 0 0 auto 0;
+  width: 100%;
+  background: rgb(255, 229, 2);
+  background: linear-gradient(90deg, rgb(255, 229, 2) 0%, rgb(255, 201, 15) 100%);
+}
+
 /*# sourceMappingURL=sign-up.css.map */

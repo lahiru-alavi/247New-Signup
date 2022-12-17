@@ -34,4 +34,7 @@
   @each $opWeight, $opWeightVal in $opacity {
     --op-#{$opWeight}: #{$opWeightVal};
   }
+  @each $bdWidth, $bdWidthVal in $border-widths {
+    --bd-#{$bdWidth}: #{$bdWidthVal};
+  }
 }

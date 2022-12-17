@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
 /* font awesome */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
@@ -37,29 +36,30 @@
 }
 
 :root {
-  --clr-primary-100: #f68d2e;
-  --clr-primary-200: #f7f0e9;
-  --clr-primary-300: #e76e00;
-  --clr-secondary-100: #2196f3;
-  --clr-secondary-200: #e9d8c9;
-  --clr-secondary-300: #d9dcf0;
+  --clr-primary-100: rgb(246, 141, 46);
+  --clr-primary-200: rgb(255, 240, 209);
+  --clr-primary-300: rgb(231, 110, 0);
+  --clr-secondary-100: rgb(33, 150, 243);
+  --clr-secondary-200: rgb(233, 216, 201);
+  --clr-secondary-300: rgb(217, 220, 240);
+  --clr-secondary-400: rgb(99, 156, 1);
   --clr-neutral-0: rgba(0, 0, 0, 0);
   --clr-neutral-50: rgba(255, 255, 255, 0.75);
-  --clr-neutral-100: white;
-  --clr-neutral-150: #e8e7e7;
-  --clr-neutral-200: #f2f2f2;
-  --clr-neutral-220: #dbdbdb;
-  --clr-neutral-250: #e5e5e5;
-  --clr-neutral-300: #707070;
-  --clr-neutral-310: #737373;
-  --clr-neutral-320: gray;
-  --clr-neutral-350: #4d4d4d;
-  --clr-neutral-370: #b4b4b4;
-  --clr-neutral-380: #b8b8b8;
-  --clr-neutral-400: #606060;
-  --clr-neutral-420: #393939;
-  --clr-neutral-450: #0c1446;
-  --clr-neutral-500: black;
+  --clr-neutral-100: rgb(255, 255, 255);
+  --clr-neutral-150: rgb(232, 231, 231);
+  --clr-neutral-200: rgb(242, 242, 242);
+  --clr-neutral-220: rgb(219, 219, 219);
+  --clr-neutral-250: rgb(229, 229, 229);
+  --clr-neutral-300: rgb(112, 112, 112);
+  --clr-neutral-310: rgb(115, 115, 115);
+  --clr-neutral-320: rgb(128, 128, 128);
+  --clr-neutral-350: rgb(77, 77, 77);
+  --clr-neutral-370: rgb(180, 180, 180);
+  --clr-neutral-380: rgb(184, 184, 184);
+  --clr-neutral-400: rgb(96, 96, 96);
+  --clr-neutral-420: rgb(57, 57, 57);
+  --clr-neutral-450: rgb(12, 20, 70);
+  --clr-neutral-500: rgb(0, 0, 0);
   --fs-small-300: 1rem;
   --fs-small-400: 1.125rem;
   --fs-small-500: 1.563rem;
@@ -97,6 +97,11 @@
   --op-600: 0.5;
   --op-700: 0.75;
   --op-800: 1;
+  --bd-1: 1px;
+  --bd-2: 2px;
+  --bd-3: 3px;
+  --bd-4: 4px;
+  --bd-5: 5px;
 }
 @media only screen and (max-width: ) {
   :root {
@@ -156,8 +161,7 @@ body {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -180,14 +184,11 @@ select {
   html:focus-within {
     scroll-behavior: auto;
   }
-
   *,
 *::before,
 *::after {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -293,6 +294,18 @@ body {
 
 .border-secondary-300 {
   border-color: var(--clr-secondary-300) !important;
+}
+
+.txt-secondary-400 {
+  color: var(--clr-secondary-400) !important;
+}
+
+.bg-secondary-400 {
+  background-color: var(--clr-secondary-400) !important;
+}
+
+.border-secondary-400 {
+  border-color: var(--clr-secondary-400) !important;
 }
 
 .txt-neutral-0 {
@@ -623,6 +636,26 @@ body {
   opacity: var(--op-800) !important;
 }
 
+.border-1 {
+  border-width: var(--bd-1) !important;
+}
+
+.border-2 {
+  border-width: var(--bd-2) !important;
+}
+
+.border-3 {
+  border-width: var(--bd-3) !important;
+}
+
+.border-4 {
+  border-width: var(--bd-4) !important;
+}
+
+.border-5 {
+  border-width: var(--bd-5) !important;
+}
+
 .wrapper {
   padding: 0 1.5rem;
   max-width: 62.5rem;
@@ -755,8 +788,6 @@ h6 {
 }
 
 .w-max {
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
 }
 
@@ -1081,8 +1112,7 @@ h6 {
   }
 }
 .ab-testimonial .comment-box img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .ab-testimonial .comment-box.box-2::after {
   left: 40%;
@@ -1371,8 +1401,7 @@ footer img {
   margin: 0 auto;
   height: 100%;
   border-radius: 18px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   overflow: hidden;
 }
 .support-block .card .card-text {
@@ -1384,8 +1413,7 @@ footer img {
 }
 
 .people-box .img-box img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 720px;
   flex-grow: 1;
 }
@@ -1421,7 +1449,7 @@ footer img {
 .people-box.left ul li::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "";
+  content: "\f111";
   margin: 0 10px 0 -20px;
   color: var(--clr-neutral-300);
   font-size: 1rem;
@@ -1447,7 +1475,7 @@ footer img {
 .people-box.right ul li::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "";
+  content: "\f111";
   margin: 0 -20px 0 10px;
   color: var(--clr-neutral-300);
   font-size: 1rem;
@@ -1462,7 +1490,7 @@ footer img {
   .people-box.right ul li::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "";
+    content: "\f111";
     margin: 0 10px 0 -20px;
     color: var(--clr-neutral-300);
     font-size: 1rem;
@@ -1515,7 +1543,7 @@ footer img {
 .trust-wrap .right-block ul li::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "";
+  content: "\f058";
   margin: 0 10px 0 -28px;
   color: var(--clr-secondary-100);
 }
@@ -1526,8 +1554,7 @@ footer img {
 }
 .story-cards .card img {
   height: 180px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .story-cards .card .card-body {
   padding: 1.8em 1.3em 0 1.3em;
@@ -1570,22 +1597,20 @@ footer img {
   background-image: none;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "";
+  content: "\f067";
   color: var(--clr-primary-100);
   transform: none;
   width: auto;
   height: auto;
 }
 .faq-sec .accordion-item button:not(.collapsed)::after {
-  content: "";
+  content: "\f068";
 }
 .faq-sec .accordion-item .accordion-body {
   line-height: 1.5;
 }
 @media only screen and (min-width: 768px) {
   .faq-sec .hero-btns {
-    width: -webkit-max-content;
-    width: -moz-max-content;
     width: max-content;
   }
 }
@@ -1690,3 +1715,5 @@ footer img {
 }
 
 /*-----------Modals end-----------------*/
+
+/*# sourceMappingURL=main.css.map */
